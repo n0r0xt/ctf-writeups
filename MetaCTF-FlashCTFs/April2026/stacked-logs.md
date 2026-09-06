@@ -1,6 +1,6 @@
-\# Stacked Logs Writeup
+# Stacked Logs Writeup
 
-\## this is my writeup for the Stacked Logs challenge from MetaCTF March 2026 Flash CTF  
+## this is my writeup for the Stacked Logs challenge from MetaCTF March 2026 Flash CTF  
 
 
 
