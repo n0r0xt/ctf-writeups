@@ -21,8 +21,6 @@ Solution:
 
 cat server.log | grep MetaCTF  
 
-
-
 ```
 
 
