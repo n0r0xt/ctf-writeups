@@ -1,6 +1,6 @@
-\# Stacked Logs Writeup
+# O-SYN-T Writeup
 
-\## this is my writeup for the Stacked Logs challenge from MetaCTF March 2026 Flash CTF  
+## this is my writeup for the O-SYN-T challenge from MetaCTF March 2026 Flash CTF  
 
 
 
