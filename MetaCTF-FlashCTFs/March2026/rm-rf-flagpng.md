@@ -1,6 +1,6 @@
-\# RM -RF Flag.png Writeup
+# RM -RF Flag.png Writeup
 
-\## this is my writeup for the RM -RF Flag.png forensics challenge from MetaCTF March 2026 Flash CTF  
+## this is my writeup for the RM -RF Flag.png forensics challenge from MetaCTF March 2026 Flash CTF  
 
 
 
@@ -14,27 +14,19 @@ This challenge was quite simple because it was just an image of a filesystem. I 
 
 ```shell
 
-
-
 fls -r -d flash.img | grep png  
-
-
 
 ```
 
 
 
-Then I used icat with the address from fls to recover the file:
+Then I used icat with the address from fls to recover the file and opened it to view the flag:
 
 
 
 ```shell
 
-
-
 icat flash.img <address> > flag.png
-
-
 
 ```  
 
