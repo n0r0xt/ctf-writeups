@@ -1,6 +1,6 @@
-\# Name Game Writeup
+# Name Game Writeup
 
-\## this is my writeup for the Name Game challenge from MetaCTF April 2026 Flash CTF  
+## this is my writeup for the Name Game challenge from MetaCTF April 2026 Flash CTF  
 
 
 
