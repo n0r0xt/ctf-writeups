@@ -5,11 +5,11 @@ Provided is an ELF called chall. When running it, it asks for a <flag> argument 
 
 The binary is statically linked and stripped with no imports, so looking for them is not possible.   
 
-When opening in cutter with aaa (auto analysis), I immediately see that it is structured weirdly, using blocks of instructions that compute addresses to jump to, along with lots of junk arithmetic operations as a form of.....
+When opening in cutter with aaa (auto analysis), I immediately see that it is structured weirdly, using blocks of instructions that compute addresses to jump to, along with lots of junk arithmetic operations as a form of control-flow obfuscation.
 
-This means that this this binary uses..... and therefore trying to attempt to fully analyse this statically and calculate all the jumps is not feasible.  
+This means that this this binary uses indirect/computed control flow and therefore trying to attempt to fully analyse this statically and calculate all the jumps is not feasible.  
 
-So I moved on to dynamic analysis with gdb. Since I want to skip past all the irrelevant instructions and get to where the flag argument is processed, I found the pointer for argv, and set a watchpoint on that address: (add gdb code example with early exit for this)  
+So I moved on to dynamic analysis with gdb. Since I want to skip past all the irrelevant instructions and get to where the flag argument is processed, I found the pointer for argv, and set a watchpoint on that address:   
 
 I saw that the program runs some code to check the length of it (custom, without calling something like strlen) to check that it is 38 characters long. If it's not, it immediately exits, so I changed my "test flag" to 0xL4ugh{A*29} which is 38 in total.  
 
