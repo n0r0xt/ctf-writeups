@@ -76,7 +76,7 @@ So the next thing I looked for was some sort of comparison and work backwards fr
 ```gdb
 (gdb) b *0x406270
 (gdb) run 0xL4ugh{AAAAAAAAAAAAAAAAAAAAAAAAAAAAA}
-Thread 1 "chall_fixed" hit Breakpoint 1, 0x0000000000406270 in ?? ()
+Thread 1 "chall_patched" hit Breakpoint 1, 0x0000000000406270 in ?? ()
 (gdb) i r rsi rdi rcx
 rsi            0x10000200            268435968
 rdi            0x10000064            268435556
@@ -88,7 +88,6 @@ So this is comparing 38 bytes of data between 0x10000200 (transformed input) and
 
 ```
 d9 91 0d b5 a4 8e c1 92 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 8c
-
 ```
 
 Notice that all the As had become 0x48. This means that it is deterministic. The same input character transforms into the same encrypted one, irrespective of position. So to solve this, all I had to do was give inputs like 0xL4ugh{ABCDEF...0123456...+-/^%_...} to get a list of transformed bytes for each character and find which ones match the flag bytes.  
