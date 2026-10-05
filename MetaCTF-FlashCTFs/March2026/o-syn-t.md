@@ -8,7 +8,7 @@ An SSH connection is given which connects to the network osynt.lan
 
 
 
-The solution was to use nmap with the -A flag for an aggressive scan, which adds more aggressive OS and service fingerprinting to the scan.  
+The solution was to use nmap with the -A flag for an aggressive scan, which adds OS and service fingerprinting to the scan.  
 
 
 
