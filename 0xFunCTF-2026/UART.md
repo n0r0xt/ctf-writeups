@@ -1,8 +1,8 @@
-\# UART Writeup  
+# UART Writeup  
 
 
 
-\## this is my writeup for the UART challenge from 0xFun CTF 2026 
+## this is my writeup for the UART challenge from 0xFun CTF 2026 
 
 
 
