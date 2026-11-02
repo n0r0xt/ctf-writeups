@@ -26,9 +26,7 @@ This made it so that when booting into the OS, before loading systemd it instead
 
 
 
-#passwd kali
-
-
+passwd kali
 
 ```
 
